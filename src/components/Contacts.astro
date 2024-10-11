@@ -8,27 +8,28 @@ const email_address = "teatrobarcelona@gmail.com";
 const phone_number = "+34643534178";
 const instagram_url = "https://www.instagram.com/teatro_ita_barcelona/";
 ---
-
-<div class="w-full">
-    <h1 class="text-[#328d94] font-generalSans text-6xl text-center py-12">Per info e prenotazioni</h1>
-    <a href={`tel:${phone_number}`} class="lg:hidden">
-        <p class="text-black font-futuraMedium text-2xl text-center font-bold">+34 643 53 41 78</p>
-    </a>
-    <p class="text-black font-futuraMedium text-2xl text-center max-lg:hidden font-bold">+34 643 53 41 78</p>
-    <a href={`mailto:${email_address}`}>
-        <p class="text-black font-futuraMedium text-2xl text-center font-bold">teatrobarcelona@gmail.com</p>
-    </a>
-    <a href={`${instagram_url}`} target="_blank">
-        <p class="text-black font-futuraMedium text-2xl text-center font-bold">teatro_ita_barcelona</p>
-    </a>
-
-    <Image
-        src={black_main_logo}
-        alt={common_alt}
-        class="mx-auto my-12"
-        width="200"
-        height="200"
-        loading="lazy"
-    />
-    <div class="h-12 bg-[#b42242]"></div>
-</div>
+<section id="contacts">
+    <div class="w-full">
+        <h1 class="text-[#328d94] font-generalSans text-6xl text-center pb-12">Per info e prenotazioni</h1>
+        <a href={`tel:${phone_number}`} class="lg:hidden">
+            <p class="text-black font-futuraMedium text-2xl text-center font-bold">+34 643 53 41 78</p>
+        </a>
+        <p class="text-black font-futuraMedium text-2xl text-center max-lg:hidden font-bold">+34 643 53 41 78</p>
+        <a href={`mailto:${email_address}`}>
+            <p class="text-black font-futuraMedium text-2xl text-center font-bold">teatrobarcelona@gmail.com</p>
+        </a>
+        <a href={`${instagram_url}`} target="_blank">
+            <p class="text-black font-futuraMedium text-2xl text-center font-bold">teatro_ita_barcelona</p>
+        </a>
+    
+        <Image
+            src={black_main_logo}
+            alt={common_alt}
+            class="mx-auto my-12"
+            width="200"
+            height="200"
+            loading="lazy"
+        />
+        <div class="h-12 bg-[#b42242]"></div>
+    </div>
+</section>
