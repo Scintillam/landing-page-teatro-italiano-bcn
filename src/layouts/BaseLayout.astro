@@ -1,0 +1,33 @@
+---
+interface Props {
+    title: string;
+    description: string;
+}
+
+const { title, description } = Astro.props;
+
+import favicon from "../assets/images/favicon.ico";
+
+// import { getLangFromUrl } from "../i18n/utils";
+import { ViewTransitions } from "astro:transitions";
+
+// const lang = getLangFromUrl(Astro.url);
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <link rel="icon" type="image/x-icon" href={favicon} />
+        <link rel="stylesheet" href="styles/global.css" />
+        <title>{title}</title>
+        <ViewTransitions />
+    </head>
+    <body>
+        <slot />
+        <script src="https://kit.fontawesome.com/3aeecf3dbb.js" crossorigin="anonymous"></script>
+        <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    </body>
+</html>

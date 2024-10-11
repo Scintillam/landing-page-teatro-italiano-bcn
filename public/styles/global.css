@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('/fonts/GeneralSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('/fonts/FuturaMedium.woff') format('woff');
+}
+
