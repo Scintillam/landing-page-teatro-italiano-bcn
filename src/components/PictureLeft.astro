@@ -1,0 +1,26 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+interface Props {
+    image_url: ImageMetadata;
+    image_alt?: string;
+    image_width?: number;
+    image_height?: number;
+    image_class?: string;
+    image_loading?: "eager" | "lazy";
+}
+
+const { image_url, image_alt, image_width, image_height, image_class, image_loading } = Astro.props;
+---
+
+<div class="place-self-center lg:-mb-36">
+    <Image
+        src={image_url}
+        alt={image_alt}
+        width={image_width}
+        height={image_height}
+        class={image_class}
+        loading={image_loading}
+    />
+</div>

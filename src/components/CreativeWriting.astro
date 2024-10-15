@@ -1,17 +1,18 @@
 ---
 import { Image } from "astro:assets";
 
-import creativeWriting_picture from "../assets/images/creativeWriting_picture.jpg";
+import PictureLeft from "./PictureLeft.astro";
+
+import creativeWriting_picture from "../assets/images/left_picture.png";
 ---
 <div class="w-full grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
 
 
-    <div class="w-full h-full bg-[url('/creativeWriting_picture.jpg')] bg-center bg-cover">
-        <Image
-            src={creativeWriting_picture}
-            alt=""
-            width={800}
-            height={400}
+    <div class="w-full h-full flex justify-center max-lg:order-2">
+        <PictureLeft
+            image_url={creativeWriting_picture}
+            image_alt=""
+            image_loading="lazy"
         />
     </div>
 

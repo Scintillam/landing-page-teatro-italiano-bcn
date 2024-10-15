@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
 
-import WhoWeAre_picture from "../assets/images/WhoWeAre_picture.png";
+import PictureLeft from "./PictureLeft.astro";
+
+import WhoWeAre_picture from "../assets/images/left_picture.png";
 ---
 <section id="whoWeAre">
     <div class="w-full grid grid-cols-1 place-self-center text-center pt-8">
@@ -12,11 +14,11 @@ import WhoWeAre_picture from "../assets/images/WhoWeAre_picture.png";
             <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
         </div>
     
-        <div class=" place-self-center">
-            <Image
-                src={WhoWeAre_picture}
-                alt=""
-                loading="lazy"
+        <div class="place-self-center">
+            <PictureLeft
+                image_url={WhoWeAre_picture}
+                image_alt=""
+                image_loading="lazy"
             />
         </div>
         
@@ -40,5 +42,5 @@ import WhoWeAre_picture from "../assets/images/WhoWeAre_picture.png";
             </div>
         </div>
     </div>
-    <div class="h-12 bg-[#b42242] my-12"></div>
+    <div class="h-12 bg-[#b42242] mt-12 mb-3 xl:my-12"></div>
 </section>

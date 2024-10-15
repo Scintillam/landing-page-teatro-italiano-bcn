@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
 
-import impro_picture from "../assets/images/impro_picture.jpg";
+import PictureRight from "./PictureRight.astro";
+
+import impro_picture from "../assets/images/right_picture.png";
 ---
 
     <div class="w-full grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 place-self-center">
@@ -45,11 +47,9 @@ import impro_picture from "../assets/images/impro_picture.jpg";
                 </p>
             </div>
         </div>
-        <Image
-            src={impro_picture}
-            alt=""
-            width="600"
-            height="600"
-            class="place-self-center"
+        <PictureRight
+            image_url={impro_picture}
+            image_alt=""
+            image_class="place-self-center"
         />
     </div>

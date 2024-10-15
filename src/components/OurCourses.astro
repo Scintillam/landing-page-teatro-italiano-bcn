@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
 
-import OurCourses_picture from "../assets/images/OurCourses_picture.jpg";
+import PictureRight from "./PictureRight.astro";
+
+import OurCourses_picture from "../assets/images/right_picture.png";
 ---
 
 <section id="ourCourses">
@@ -9,7 +11,7 @@ import OurCourses_picture from "../assets/images/OurCourses_picture.jpg";
     
         <div class="col-span-1 text-center place-self-center">
             <h1 class="text-6xl font-generalSans text-[#328d94] mb-5">I NOSTRI CORSI</h1>
-            <h1 class="text-5xl font-generalSans text-[#b42242] mb-5">TECNICA TEATRALE</h1>
+            <h1 class="text-5xl font-generalSans text-[#b42242] mb-0 xl:mb-5">TECNICA TEATRALE</h1>
         </div>
     
         <div class="row-start-2 mb-5 max-lg:place-self-center text-center lg:text-left lg:pl-32">
@@ -35,11 +37,11 @@ import OurCourses_picture from "../assets/images/OurCourses_picture.jpg";
             </div>
         </div>
     
-        <div class="place-self-center row-start-3 row-span-1 lg:row-span-4 lg:row-start-2 max-lg:w-64 max-lg:h-64">
-            <Image
-                src={OurCourses_picture}
-                alt="OurCourses_picture"
-                loading="lazy"
+        <div class="place-self-center row-start-3 row-span-1 lg:row-span-4 lg:row-start-2">
+            <PictureRight
+                image_url={OurCourses_picture}
+                image_alt=""
+                image_loading="lazy"
             />
         </div>
     
