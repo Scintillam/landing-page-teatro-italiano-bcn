@@ -1,14 +1,11 @@
 ---
 import { Image } from "astro:assets";
-
 import PictureLeft from "./PictureLeft.astro";
-
-import creativeWriting_picture from "../assets/images/left_picture.png";
+import creativeWriting_picture from "../assets/images/left_picture_3.png";
 ---
-<div class="w-full grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
 
-
-    <div class="w-full h-full flex justify-center max-lg:order-2">
+<div class="w-full grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1">
+    <div class="w-full h-full flex justify-center max-lg:order-2 px-4">
         <PictureLeft
             image_url={creativeWriting_picture}
             image_alt=""
@@ -16,24 +13,48 @@ import creativeWriting_picture from "../assets/images/left_picture.png";
         />
     </div>
 
-    <div class="w-full max-lg:place-self-center text-center lg:w-1/2 lg:text-left lg:ml-12">
-        <h1 class="text-5xl text-[#b42242] font-generalSans my-12">SCRITTURA CREATIVA</h1>
+    <div class="w-full max-lg:place-self-center text-center lg:text-left lg:w-3/4 lg:ml-16 px-4"> 
+        <h1 class="text-3xl lg:text-5xl text-[#b42242] font-generalSans my-6 lg:my-12">
+            SCRITTURA CREATIVA
+        </h1>
+
         <div class="mb-5">
-            <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <p class="text-xl lg:text-2xl font-futuraMedium font-semibold">
+                Un viaggio nella scrittura e nella creatività.
+            </p>
+            <p class="text-xl lg:text-2xl font-futuraMedium font-semibold">
+                Un percorso in cui, insieme ai tuoi compagni di avventura, scoprirai come dar vita a storie capaci di emozionare e coinvolgere chi le legge.
+            </p>
         </div>
+
         <div class="mb-5">
-            <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <p class="text-sm lg:text-base font-futuraMedium font-semibold">
+                Attraverso esercizi pratici, giochi creativi e momenti di condivisione, imparerai a costruire trame avvincenti, a creare personaggi autentici e a dare voce alle tue idee.
+            </p>
+            <p class="text-sm lg:text-base font-futuraMedium font-semibold">
+                Ogni incontro sarà l’occasione per sperimentare, confrontarti con gli altri e lasciarti ispirare dalle infinite possibilità delle parole.
+            </p>
+            <p class="text-sm lg:text-base font-futuraMedium font-semibold">
+                Ti forniremo tutti gli strumenti necessari per trovare la tua voce narrativa, esplorando diversi stili e generi attraverso la scrittura di vari racconti.
+            </p>
         </div>
-        <div>
-            <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+
+        <div class="mb-8">
+            <p class="text-sm lg:text-base font-futuraMedium font-semibold">
+                Che tu abbia già esperienza o stia muovendo i primi passi, questo laboratorio è pensato per guidarti con passione e leggerezza,
+                accompagnandoti nella scoperta del piacere di scrivere e raccontare storie che lascino il segno.
+            </p>
+        </div>
+
+        <div class="flex justify-center lg:justify-start">
+            <a href="https://www.instagram.com/teatro_ita_barcelona/?hl=it" target="_blank">
+                <button
+                    type="button"
+                    class="text-white bg-[#b42242] hover:bg-red-800 font-futuraMedium rounded-lg text-base lg:text-lg px-6 py-2 lg:px-8 lg:py-3 transition-all"
+                >
+                    Scopri di Più
+                </button>
+            </a>
         </div>
     </div>
 </div>
-<div class="h-12 bg-[#b42242] my-12"></div>

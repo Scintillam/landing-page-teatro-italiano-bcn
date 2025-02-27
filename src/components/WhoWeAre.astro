@@ -3,44 +3,30 @@ import { Image } from "astro:assets";
 
 import PictureLeft from "./PictureLeft.astro";
 
-import WhoWeAre_picture from "../assets/images/left_picture.png";
+import WhoWeAre_picture from "../assets/images/left_picture_4.png";
 ---
-<section id="whoWeAre">
-    <div class="w-full grid grid-cols-1 place-self-center text-center pt-8">
-        <div class="xl:col-span-2 place-self-center text-center">
-            <h1 class="text-6xl font-generalSans text-[#328d94] mb-5">CHI SIAMO</h1>
-            <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+<section id="whoWeAre" class="py-12">
+    <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 place-items-center text-center lg:text-left">
+        <div class="lg:order-1 w-full px-6 lg:px-12">
+            <h1 class="text-6xl font-generalSans text-[#328d94] mb-8">CHI SIAMO</h1>
+            <p class="text-2xl font-futuraMedium font-semibold mb-6">
+                Siamo la Compagnia Teatrale Italiana di Barcellona, attiva dal 2021 nella promozione di spettacoli, eventi e festival che celebrano la cultura italiana.
+            </p>
+            <p class="text-2xl font-futuraMedium font-semibold mb-6">
+                Con passione e dedizione, coinvolgiamo circa 70 studenti nei nostri corsi di teatro, offrendo un luogo dove esprimersi, sperimentare e crescere insieme sul palcoscenico.
+            </p>
         </div>
-    
-        <div class="place-self-center">
-            <PictureLeft
-                image_url={WhoWeAre_picture}
-                image_alt=""
-                image_loading="lazy"
-            />
-        </div>
-        
-        <div class="mt-0 mr-0 lg:mt-12 lg:mr-12 place-self-center">
-            <div class="mb-5">
-                <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-        
-            <div class="mb-5 place-self-center">
-                <p class="text-sm font-semibold font-futuraMedium">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-semibold font-futuraMedium">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-semibold font-futuraMedium">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-        
-            <div class="mb-5 place-self-center">
-                <p class="text-sm font-semibold font-futuraMedium">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-semibold font-futuraMedium">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-semibold font-futuraMedium">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+
+        <div class="lg:order-2 w-full flex justify-center">
+            <div class="w-5/5 lg:w-4/4">
+                <PictureLeft
+                    image_url={WhoWeAre_picture}
+                    image_alt="Foto della compagnia teatrale"
+                    image_loading="lazy"
+                />
             </div>
         </div>
     </div>
-    <div class="h-12 bg-[#b42242] mt-12 mb-3 xl:my-12"></div>
+
+    <div class="h-12 bg-[#b42242] mt-16"></div>
 </section>

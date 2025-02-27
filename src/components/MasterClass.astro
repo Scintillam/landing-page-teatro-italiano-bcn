@@ -2,53 +2,31 @@
 import { Image } from "astro:assets";
 import PictureRight from "./PictureRight.astro";
 
-import masterclass_picture from "../assets/images/right_picture.png";
+import masterclass_picture from "../assets/images/right_picture_5.png";
 ---
 
 <section id="masterclass">
     <div class="w-full grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 place-self-center">
-    
         <div class="lg:ml-12 text-center lg:text-left">
-            <h1 class="text-5xl text-[#b42242] font-generalSans my-12">MASTERCLASS & EVENTI
-            </h1>
+            <h1 class="text-5xl text-[#b42242] font-generalSans my-12">MASTERCLASS & EVENTI</h1>
             <div class="mb-5">
                 <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Dal 2022 al 2024 abbiamo curato la sezione artistica del TASTE IT, la manifestazione dedicata alla cultura e alla gastronomia italiana, considerata la più importante di Barcellona. 
+                    Oltre ai grandi eventi, organizziamo incontri mensili rivolti sia alla comunità italiana che a chiunque ami la nostra cultura, offrendo momenti di condivisione e scoperta. 
+                    Per chi desidera approfondire le proprie competenze, proponiamo masterclass teatrali mensili, occasioni preziose di formazione e crescita artistica.
                 </p>
             </div>
-            <div class="mb-5">
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-            </div>
-            <div>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
+
+            <div class="flex justify-start lg:ml-0 mt-4">
+                <a href="https://www.instagram.com/teatro_ita_barcelona/?hl=it" target="_blank">
+                    <button type="button" class="text-white bg-[#b42242] hover:bg-red-800 font-futuraMedium rounded-lg text-lg px-8 py-3 transition-all">
+                        Scopri di Più
+                    </button>
+                </a>
             </div>
         </div>
-        <div class="w-full">
+
+        <div class="w-full mt-24">
             <PictureRight
                 image_url={masterclass_picture}
                 image_alt=""
@@ -56,12 +34,6 @@ import masterclass_picture from "../assets/images/right_picture.png";
             />
         </div>
     </div>
-    <div class="flex flex-row justify-center max-lg:-mt-36">
-        <div class="w-1/2 flex justify-center">
-            <button type="button" class="text-white opacity-100 bg-[#b42242] hover:bg-red-800 font-futuraMedium rounded-lg text-sm px-5 py-2.5 m-4 lg:-mt-12">Info</button>
-        </div>
-        <div class="lg:w-1/2">
-        </div>
-    </div>
+
     <div class="h-12 bg-[#b42242] my-12"></div>
 </section>

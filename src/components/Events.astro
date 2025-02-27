@@ -1,0 +1,172 @@
+---
+import EventCard from "../components/EventCard.astro";
+
+
+const events = [
+{
+        title: "Agata - la guerra è delle donne",
+        date: "08-03-2025",
+        img: "https://vive.scintillam.com/uploads/11ne_Y_Qr_U37_Geyyc_Ug9_Nr82_Qnoj6p_F2y_Qg_NRY_bce56bc093.jpg", 
+        address: "Teatre Golem's",
+        description: "Atto unico di e con Ilaria Weiss.",
+        url: "https://fenles.com/evento/agata-la-guerra-e-delle-donne-8-3-2025-teatre-golems"
+    },
+    {
+        title: "Risate Impro...ponibili",
+        date: "15-03-2025",
+        img: "https://vive.scintillam.com/uploads/d_O_Twy4ia_X_Sdr_G_Sw_Wg_QFN_Dxf4_G_na_Nm52_L5w_U_a117fd2cee.jpg", 
+        address: "Teatre Golem's",
+        description: "Uno spettacolo di Improvvisazione Teatrale realizzato dagli studenti della Compagnia Teatrale Italiana di Barcellona. Regia Elisa Ciraci.",
+        url: "https://fenles.com/evento/risate-improponibili-15-3-2025-teatre-golems"  
+    },
+    {
+        title: "La fortuna con la F maiuscola",
+        date: "30-03-2025",
+        img: "https://vive.scintillam.com/uploads/o3_NTU_Ej7_V_Kc0_F5jk39i9_H_Zj97_Wr47c_PJS_3j7_4f6d6d6731.jpg", 
+        address: "Teatre Golem's",
+        description: "Commedia in due atti tutta da ridere.",
+        url: "https://fenles.com/evento/la-fortuna-con-la-f-maiuscola-13-4-2025-teatre-golems" 
+    },
+    {
+        title: "La fortuna con la F maiuscola",
+        date: "13-04-2025",
+        img: "https://vive.scintillam.com/uploads/o3_NTU_Ej7_V_Kc0_F5jk39i9_H_Zj97_Wr47c_PJS_3j7_4f6d6d6731.jpg", 
+        address: "Teatre Golem's",
+        description: "Commedia in due atti tutta da ridere.",
+        url: "https://fenles.com/evento/la-fortuna-con-la-f-maiuscola-13-4-2025-teatre-golems"  
+    },
+    {
+        title: "La fortuna con la F maiuscola",
+        date: "12-04-2025",
+        img: "https://vive.scintillam.com/uploads/o3_NTU_Ej7_V_Kc0_F5jk39i9_H_Zj97_Wr47c_PJS_3j7_4f6d6d6731.jpg", 
+        address: "Teatre Golem's",
+        description: "Commedia in due atti tutta da ridere.",
+        url: "https://fenles.com/evento/la-fortuna-con-la-f-maiuscola-13-4-2025-teatre-golems"  
+    },
+    
+];
+
+const defaultImageUrl = "/images/eventcard.png";
+---
+
+<h1 class="text-5xl text-[#b42242] font-generalSans my-12 ml-10">PROSSIMI EVENTI</h1>
+<div class="px-4 sm:px-8 py-12 ">
+    <div class="event-grid flex gap-4 overflow-x-auto overflow-y-hidden">
+        {
+            events.map(
+                (
+                    event: {
+                        title: any;
+                        date: any;
+                        img: any;
+                        address: any;
+                        description: any;
+                        url: any;  
+                    },
+                    index: any,
+                ) => (
+                    <div class="event-item flex-shrink-0 min-w-[250px] sm:min-w-0">
+                        <EventCard
+                            key={index}
+                            title={event.title}
+                            date={event.date}
+                            imageUrl={event.img || defaultImageUrl}
+                            address={event.address}
+                            description={event.description}
+                            url={event.url}  
+                        />
+                    </div>
+                ),
+            )
+        }
+    </div>
+</div>
+
+
+<div class="max-lg:mb-56"></div>
+
+<style>
+    .event-title-header {
+        letter-spacing: 5px;
+        margin: 20px 0;
+    }
+
+    .event-container {
+        overflow-x: auto;
+        scrollbar-width: thin;
+        position: relative; 
+    }
+
+    .event-container::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .event-container::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1); 
+        border-radius: 4px;
+    }
+
+    .event-card {
+        transition: transform 0.3s ease-in-out, z-index 0s ease 0.3s;
+        transform-origin: center;
+        position: relative; 
+    }
+
+    .event-card:hover {
+        transform: scale(1.05);
+        z-index: 10; 
+    }
+
+    .event-grid {
+        display: flex;
+        gap: 16px;
+        flex-wrap: nowrap;
+        padding-bottom: 16px; 
+    }
+
+    .event-item {
+        flex-shrink: 0;
+        min-width: 250px;
+        transition: margin 0.3s ease-in-out;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative; 
+    }
+
+    .event-item:hover {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -20px;
+        margin-bottom: -10px;
+        z-index: 10; 
+    }
+
+
+    @media (max-width: 768px) {
+        .event-grid {
+            gap: 10px; 
+            padding-left: 16px; 
+            padding-right: 16px;
+        }
+
+        .event-item {
+            min-width: 200px;
+        }
+
+        .event-title-header {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .event-item {
+            min-width: 180px;
+        }
+
+        .event-card {
+            box-shadow: none; 
+        }
+    }
+</style>
+<div class="h-12 max-lg:-mt-80"></div>

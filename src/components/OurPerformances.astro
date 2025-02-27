@@ -1,31 +1,27 @@
 ---
 import { Image } from "astro:assets";
-
 import PictureLeft from "./PictureLeft.astro";
-
-import performance_picture from "../assets/images/left_picture.png";
+import performance_picture from "../assets/images/left_picture_2.png";
 ---
-<section id="ourPerformances">
+
+<section id="ourPerformances" class="mb-24 px-6 lg:px-16">
     <div class="w-full grid grid-cols-1 lg:grid-cols-2 place-self-center text-center">
-        <div class="lg:order-1 max-lg:-mb-36">
-            <h1 class="text-5xl text-[#b42242] font-generalSans my-12">I NOSTRI SPETTACOLI</h1>
+        <div class="lg:order-1 px-4"> 
+            <h1 class="text-3xl lg:text-5xl text-[#b42242] font-generalSans my-6 lg:my-12">
+                I NOSTRI SPETTACOLI
+            </h1>
+
+
             <div class="mb-5">
-                <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-2xl font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-            <div class="mb-5">
-                <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            </div>
-            <div class="mb-56">
-                <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="text-sm font-futuraMedium font-semibold">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <p class="text-base lg:text-2xl font-futuraMedium font-semibold">
+                    Siamo orgogliosi di essere gli organizzatori di tre edizioni del Festival del Teatro Italiano di Barcellona, 
+                    un evento che celebra la nostra tradizione teatrale e la porta nel cuore della città catalana. 
+                    Inoltre, proponiamo una stagione teatrale mensile con spettacoli variegati, capaci di coinvolgere e appassionare un pubblico eterogeneo. 
+                    Partecipiamo con entusiasmo alle feste Mayor dei quartieri Fort Pienc e Santa Caterina, portando in strada la vivacità e l’energia del teatro.
+                </p>   
             </div>
         </div>
+
         <PictureLeft
             image_url={performance_picture}
             image_alt="" 
