@@ -3,53 +3,55 @@ import { Image } from "astro:assets";
 
 import PictureRight from "./PictureRight.astro";
 
-import impro_picture from "../assets/images/right_picture.png";
+import impro_picture from "../assets/images/right_picture_3.png";
 ---
 
-    <div class="w-full grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 place-self-center">
-    
-        <div class="lg:ml-12 text-center lg:text-left">
-            <h1 class="text-5xl text-[#b42242] font-generalSans my-12">IMPRO</h1>
-            <div class="mb-5">
-                <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-2xl font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-            </div>
-            <div class="mb-5">
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-            </div>
-            <div>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-                <p class="text-sm font-futuraMedium font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                </p>
-            </div>
+<div class="w-full grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 place-self-center">
+    <div class="lg:ml-12 text-center lg:text-left">
+        <h1 class="text-5xl text-[#b42242] font-generalSans my-12">IMPRO</h1>
+        <div class="mb-5">
+            <p class="text-2xl font-futuraMedium font-semibold">
+                L’improvvisazione nasce dall’ascolto.
+            </p>
         </div>
-        <PictureRight
-            image_url={impro_picture}
-            image_alt=""
-            image_class="place-self-center"
-        />
+        <div class="mb-5">
+            <p class="text-sm font-futuraMedium font-semibold">
+                Non si ascolta solo con le orecchie, ma con tutto il corpo, con lo sguardo, con le emozioni.
+            </p>
+            <p class="text-sm font-futuraMedium font-semibold">
+                È attraverso l’ascolto profondo che si crea la connessione con sé stessi, con gli altri e con lo spazio circostante.
+            </p>
+            <p class="text-sm font-futuraMedium font-semibold">
+                Nel nostro laboratorio, l’ascolto diventa il punto di partenza per l’improvvisazione:
+                si impara a percepire i segnali, a lasciarsi sorprendere e a reagire con autenticità.
+            </p>
+        </div>
+        <div>
+            <p class="text-sm font-futuraMedium font-semibold">
+                Collaborare significa accogliere le proposte degli altri e costruire insieme, senza giudizio e con spirito di gioco.
+            </p>
+            <p class="text-sm font-futuraMedium font-semibold">
+                È un percorso che allena la presenza, stimola la creatività e rafforza la fiducia reciproca.
+            </p>
+            <p class="text-sm font-futuraMedium font-semibold">
+                Ogni azione nasce da un ascolto attento e ogni improvvisazione si trasforma in un’esperienza unica e irripetibile.
+            </p>
+        </div>
     </div>
+    <PictureRight
+        image_url={impro_picture}
+        image_alt=""
+        image_class="place-self-center"
+    />
+</div>
+
+<div class="flex justify-center lg:justify-start lg:ml-12 mt-1 mb-6 lg:order-2">
+    <a href="https://www.instagram.com/teatro_ita_barcelona/?hl=it" target="_blank">
+        <button type="button" class="text-white bg-[#b42242] hover:bg-red-800 font-futuraMedium rounded-lg text-lg px-8 py-3 transition-all">
+            Scopri di Più
+        </button>
+    </a>
+</div>
+<div class="max-lg:mb-16"></div>
+<div class="h-12 bg-[#b42242] max-lg:-mt-80"></div>
+<div class="max-lg:mb-56"></div>
