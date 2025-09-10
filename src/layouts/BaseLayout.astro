@@ -31,7 +31,7 @@ import { ViewTransitions } from "astro:transitions";
         <!-- ============================ -->
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={image ? `${baseUrl}${image}` : `${baseUrl}${defaultImage}`} />
+        <meta property="og:image" content={`${baseUrl}${defaultImage}`} />
         <meta property="og:url" content={url || `${baseUrl}${Astro.url.pathname}`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteName} />
@@ -40,7 +40,7 @@ import { ViewTransitions } from "astro:transitions";
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image ? `${baseUrl}${image}` : `${baseUrl}${defaultImage}`} />
+        <meta name="twitter:image" content={`${baseUrl}${defaultImage}`} />
         <ViewTransitions />
     </head>
     <body>
