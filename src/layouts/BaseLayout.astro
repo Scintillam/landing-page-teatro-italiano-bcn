@@ -2,9 +2,15 @@
 interface Props {
     title: string;
     description: string;
+    image?: string;
+    url?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, image, url } = Astro.props;
+
+const baseUrl = "https://teatroitalianobarcelona.com";
+const siteName = "Compagnia Teatrale Italiana di Barcellona";
+const defaultImage = "/logo.png";
 
 import favicon from "../assets/images/favicon.ico";
 
@@ -20,6 +26,21 @@ import { ViewTransitions } from "astro:transitions";
         <link rel="icon" type="image/x-icon" href={favicon} />
         <link rel="stylesheet" href="styles/global.css" />
         <title>{title}</title>
+        <!-- ============================ -->
+    <!-- META TAG OPEN GRAPH (Rich Link Preview) -->
+        <!-- ============================ -->
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image ? `${baseUrl}${image}` : `${baseUrl}${defaultImage}`} />
+        <meta property="og:url" content={url || `${baseUrl}${Astro.url.pathname}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={siteName} />
+
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image ? `${baseUrl}${image}` : `${baseUrl}${defaultImage}`} />
         <ViewTransitions />
     </head>
     <body>
