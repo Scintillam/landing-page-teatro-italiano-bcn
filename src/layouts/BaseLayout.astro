@@ -3,10 +3,10 @@ interface Props {
     title: string;
     description: string;
     image?: string;
-    urlPreview?: string;
+    url?: string;
 }
 
-const { title, description, image, urlPreview } = Astro.props;
+const { title, description, image, url } = Astro.props;
 
 const baseUrl = "https://teatroitalianobarcelona.com";
 const siteName = "Compagnia Teatrale Italiana di Barcellona";
@@ -32,14 +32,14 @@ import { ViewTransitions } from "astro:transitions";
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={`${baseUrl}${defaultImage}`} />
-        <meta property="og:url" content={urlPreview || `${baseUrl}${Astro.url.pathname}`} />
+        <meta property="og:url" content={url || `${baseUrl}${Astro.url.pathname}`} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={siteName} />
 
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={"Siamo la Compagnia Teatrale Italiana di Barcellona, attiva dal 2021 nella promozione di spettacoli, eventi e festival che celebrano la cultura italiana."} />
+        <meta name="twitter:description" content={"Scopri la Compagnia Teatrale Italiana di Barcellona: spettacoli, corsi e masterclass in italiano. Cultura, arte e passione al cuore di Barcellona per adulti, bambini e chi ama la scena!"} />
         <meta name="twitter:image" content={`${baseUrl}${defaultImage}`} />
         <ViewTransitions />
     </head>
