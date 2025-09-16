@@ -31,19 +31,19 @@ const tiktok_url = "https://www.tiktok.com/@teatroitabarcelona";
           <div class="hidden w-full lg2:block lg2:w-auto" id="navbar-sticky">
             <ul class="font-medium font-futuraMedium flex flex-col p-4 lg2:p-0 mt-4 rounded-lg lg2:flex-row lg2:space-x-8 rtl:space-x-reverse lg2:mt-0">
               <li>
-                <a href="#whoWeAre" class="block py-2 px-3 text-white rounded lg2:p-0" aria-current="page">Chi siamo</a>
+                <a href="#whoWeAre" class="block py-2 px-3 text-white rounded lg2:p-0" aria-current="page" onclick="window.fenlytics && fenlytics.track('whoweare_click')">Chi siamo</a>
               </li>
               <li>
-                <a href="#ourCourses" class="block py-2 px-3 text-white rounded lg2:p-0">I nostri corsi</a>
+                <a href="#ourCourses" class="block py-2 px-3 text-white rounded lg2:p-0" onclick="window.fenlytics && fenlytics.track('courses_click')">I nostri corsi</a>
               </li>
               <li>
-                <a href="#ourPerformances" class="block py-2 px-3 text-white rounded lg2:p-0">Spettacoli</a>
+                <a href="#ourPerformances" class="block py-2 px-3 text-white rounded lg2:p-0" onclick="window.fenlytics && fenlytics.track('shows_click')">Spettacoli</a>
               </li>
               <li>
-                <a href="#masterclass" class="block py-2 px-3 text-white rounded lg2:p-0">Masterclass & Eventi</a>
+                <a href="#masterclass" class="block py-2 px-3 text-white rounded lg2:p-0" onclick="window.fenlytics && fenlytics.track('events_click')">Masterclass & Eventi</a>
               </li>
               <li>
-                <a href="#contacts" class="block py-2 px-3 text-white rounded lg2:p-0">Contatti</a>
+                <a href="#contacts" class="block py-2 px-3 text-white rounded lg2:p-0" onclick="window.fenlytics && fenlytics.track('contact_click')">Contatti</a>
               </li>
     
                 <li class="flex">
