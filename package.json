@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.1.1",
     "astro": "^5.15.9",
-    "flowbite": "^2.5.2",
+    "flowbite": "^4.0.1",
     "tailwindcss": "^3.4.13"
   }
 }
